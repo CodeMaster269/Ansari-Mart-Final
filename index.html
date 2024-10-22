@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navabr -->
+    <nav class="navbar">
+        <div class="navel1"><a href="index.html">
+                <h1> Ansari<span>Mart</span></h1>
+            </a></div>
+        <div class="navel2">
+            <ul id="list-section">
+                <li><a href="index.html" class="contentbtns active">HOME </a></li>
+                <li><a href="wishlist.html" class="contentbtns">WISHLIST </a></li>
+                <li><a href="cart.html" class="contentbtns">CART </a></li>
+                <li><a href="checkout.html" class="contentbtns">CHECKOUT </a></li>
+                <li><a href="Blog.html" class="contentbtns">BLOG </a></li>
+                <li><a href="about.html" class="contentbtns">ABOUT </a></li>
+                <li><a href="contact.html" class="contentbtns">CONTACT </a></li>
+
+            </ul>
+        </div>
+        <div class="navel3">
+           <div class="circle"> <a href="cart.html" style="color: green;"><ion-icon name="cart-outline"></ion-icon></a></div><p id="item-count">0</p>
+           <div class="circle"> <a href="wishlist.html" style="color: green;"><ion-icon name="heart-outline"></ion-icon></a></div><p id="wish-count">0</p>
+        </div>
+    </nav>
+    <!--  -->
+
+
+
+    
+
+
+
+
+
+
+
+<!-- sec1 start -->
+<section class="sec1">
+    <h1>100% Fresh & Organi Fruits</h1>
+    <a href="Blog.html"><button class="details-blog"> View Details</button></a>
+</section>
+<!-- sec1 start -->
+
+
+
+
+
+
+
+
+
+
+<!-- here starts section 2 -->
+    <input type="radio" name="Photos" id="ph-check1" class="radio-input" checked> 
+    <input type="radio" name="Photos" id="ph-check2" class="radio-input"> 
+    <input type="radio" name="Photos" id="ph-check3" class="radio-input"> 
+
+
+
+
+
+    <section class="sec2">
+
+        <h1>Vegetable Photos</h1>
+
+        <div class="top-btns">
+           <h3>Our Products</h3>
+            <label for="ph-check1">All Products</label>
+            <label for="ph-check2">Summer Products</label>
+            <label for="ph-check3">Winter Products</label>
+        </div>
+
+        <div class="card-gallery">
+
+          
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/amrood-summer.jpg" alt="">
+                <h3>Guava</h3>
+                <p>100/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+            <!-- card-start -->
+            <div class="card winter">
+                <img src="images/index/apples-winter.jpg" alt="">
+                <h3>Apples</h3>
+                <p>400/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/banana-summer.jpg" alt="">
+                <h3>Banana</h3>
+                <p>150/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card winter">
+                <img src="images/index/cherry.jpg" alt=""  style="height: 200px;">
+                <h3>Cherry</h3>
+                <p>200/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/FLASA-summer.jpg" alt="" style="height: 200px;">
+                <h3>Falsa</h3>
+                <p>100/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card winter">
+                <img src="images/index/grapes-winter.jpg" alt="">
+                <h3>Grapes</h3>
+                <p>350/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card winter">
+                <img src="images/index/lachi-winter.jpg" alt="">
+                <h3>Lachi</h3>
+                <p>100/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn  wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/locat-summer.jpg" alt="">
+                <h3>Locat</h3>
+                <p>140/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/mango-summer.jpg" alt="">
+                <h3>Mango</h3>
+                <p>300/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/melon-summer.jpg" alt="">
+                <h3>Melon</h3>
+                <p>80/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/peach-summer.jpg" alt="">
+                <h3>Peach</h3>
+                <p>250/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card winter">
+                <img src="images/index/pear-winter.jpg" alt="">
+                <h3>Pear</h3>
+                <p>450/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop "><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card winter">
+                <img src="images/index/pomegrant-winter.jpg" alt="">
+                <h3>Pomegrant</h3>
+                <p>300/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/strawberry-summer.jpg" alt="">
+                <h3>Strawberry</h3>
+                <p>60/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop"   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+             <!-- card-start -->
+             <div class="card summer">
+                <img src="images/index/watermelon-summer.jpg" alt="">
+                <h3>Watermelon</h3>
+                <p>40/- Rs</p>
+                <div class="card-btns">
+                   <a href="Blog.html"> <button class="cd-btn detail-pop"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button></a>
+                  <button class="cd-btn cart-pop "   onclick='cart()'><ion-icon name="cart-outline"></ion-icon></button></a>
+                    <button class="cd-btn wishlist-pop"    onclick='wishlist()'><ion-icon name="heart-outline"></ion-icon></button></a>
+                </div>
+            </div>
+            <!-- card-end -->
+
+
+           
+
+           
+
+           
+
+           
+
+          
+
+        
+
+            
+
+<!-- here ends section 2 -->
+
+
+
+
+
+
+
+
+
+
+         
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- sec3 starts -->
+
+<section  class="section3">
+
+    <div class="sec3upper">
+        <p>Testimony</p>
+        <p>Our Satisfied Customer Says</p>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia 
+            and Consonantia, there live the blind texts. Separated they live in Separated they live in Separated they live in</p>
+    </div>
+
+    <div class="sec3lower">
+
+       <div class="card3">
+        <div class="cd-up"><p>Jacob Smith</p>
+                             <p>Co Designer</p></div>
+        <div class="cd-img1 cd-img"></div>
+        <div class="cd-low">
+            <p>A small river named Duden flows by their place and supplies
+                 it with the necessary regelialia.</p>
+        </div>
+       </div>
+
+       <div class="card3">
+        <div class="cd-up"><p>Aldin Henderson</p>
+                             <p>Web Developer</p></div>
+        <div class="cd-img2 cd-img"></div>
+        <div class="cd-low">
+            <p>A small river named Duden flows by their place and supplies
+                 it with the necessary regelialia.</p>
+        </div>
+       </div>
+
+       <div class="card3">
+        <div class="cd-up"><p>Mark Willis</p>
+                             <p>Lead Web Developer</p></div>
+        <div class="cd-img3 cd-img"></div>
+        <div class="cd-low">
+            <p>A small river named Duden flows by their place and supplies
+                 it with the necessary regelialia.</p>
+        </div>
+       </div>
+
+    </div>
+  
+</section>
+<!-- sec3 ends -->
+
+
+
+
+
+
+
+
+<section class="sec4">
+
+    <div class="subs_txt">
+        <p>Subcribe to our Newsletter</p>
+        <p>Get e-mail updates about our latest shops and special offers</p>
+    </div>
+    <div class="subs_input">
+        <input id="subs_mail" type="email" placeholder="Enter Email Address" required>
+        <input id="subs_submit" type="submit" value="Subscribe">
+            
+    </div>
+
+</section>
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+
+
+
+
+let subs_mail = document.getElementById('subs_mail');
+    function inputvalue(){
+    console.log(subs_mail.value);
+    }
+    setInterval(inputvalue, 2000)
+    let subs_submit =  document.getElementById('subs_submit');
+
+
+    subs_submit.addEventListener('click', ()=>{
+        if(subs_mail.value == null){
+            console.log("aalo le lo");
+            alert('Please Enter the Email')
+        }
+        else{
+            alert('Subscribed Successful')
+        }
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+let x = 0;
+let y=0;
+
+    
+//  let old_item_count = document.getElementById('item-count').innerText;
+ let new_item_count = document.getElementById('item-count');
+ let wish_item_count = document.getElementById('wish-count');
+
+function cart(){
+    // if(x<0){
+    //     console.log("");
+    // }
+    // else{
+
+ 
+    //     confirm(`Add this item to Cart?`)
+
+        x += 1;
+        new_item_count.innerText = x;
+
+           Swal.fire({
+            title: "Item Added to Cart",
+            text: "Thanks For Shopping Here!",
+            icon: "success"
+        });
+
+    }
+//    let  new_item_count = item_count + 1;
+//     alert(`Product added to cart ${new_item_count}`)
+//     item_count.innerText = new_item_count;
+// }
+
+
+function wishlist() {
+    // alert("Added to Wishlist");
+    // if(x<0){
+    //     console.log("");
+    // }
+    // else{
+        y += 1;
+        wish_item_count.innerText = y;
+
+          Swal.fire({
+            title: "Item Added to Wishlist",
+            text: "Happy Shopping",
+            icon: "success"
+        });
+    }
+// }
+
+</script>
+
+</body>
+
+</html>

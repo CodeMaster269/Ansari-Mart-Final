@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+}
+
+
+
+.sec1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(imagesdeep/index-sec1-bg1.jpg);
+    background-position: top center;
+    background-size: 105% ;
+    animation: sec1background 10s linear infinite;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes sec1background {
+    0%{
+        background-image: url(imagesdeep/index-sec1-bg1.jpg);
+    }
+    50%{
+        background-image: url(imagesdeep/index-sec1-bg2.jpg);
+    }
+    100%{
+        background-image: url(imagesdeep/index-sec1-bg1.jpg);
+    }
+}
+
+.sec1:hover{
+    background-size: 108%;
+}
+
+.sec1 h1{
+   
+    color: white;
+    text-shadow: 2px 5px 7px black;
+    font-size: 50px;
+    animation: sec1text 10s linear infinite;
+    font-family: cursive;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    user-select: none;
+    margin-bottom: 20px;
+
+}
+
+.sec1 .details-blog{
+    height: max-content;
+    width: max-content;
+    padding: 15px 45px ;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid green;
+}
+.sec1 .details-blog:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+
+
+.sec2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+.sec2 .cart-table{
+    margin-top: 30px;
+    font-size: 16px;
+    width: 85%; 
+    height: auto;
+    letter-spacing: 1px ;
+    margin-bottom: 30px;
+}
+.sec2 .cart-table .table-head{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+}
+.sec2 .cart-table td{
+    
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgrey;
+    
+
+}
+.sec2 .cart-table .td-text{    
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec2 .cart-table .td-count input{    
+    height: 40px;
+    width: 150px;
+    padding: 5px 10px;
+    font-size: 17px;
+    text-align: center;
+    outline: 2px solid green;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}.sec2 .cart-table .td-rs, .td-total{
+    color: green    ;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sec2 .cart-table td p{
+    color: grey ;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.sec2 .cart-table .td-btn span{
+    height: max-content;
+    width: max-content;
+    border: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+.sec2 .cart-table .td-btn span:hover{
+    background-color: green;
+    color: white;
+}
+.sec2 .cart-table .td-btn span:hover button{
+    color: white;
+}
+.sec2 .cart-table .td-btn button {
+    background: transparent;
+    transform: rotate(45deg);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    /* padding: 5px 5px; */
+    padding: 0px 4px 0px 4px;
+}
+.sec2 .cart-table td img {
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* section 3 */
+
+.sec3{
+    height: auto ;
+    width: 100%;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sec3 div{
+    height: max-content ;
+    width: 30%;
+    border: 1px solid lightgrey;
+    padding: 15px 15px;
+}
+.sec3 div:nth-child(2){
+    height: auto ;
+    width: 30%;
+    border: 1px solid lightgrey;
+    padding: 15px 15px;
+}
+.sec3 h3{
+    font-family: Calibri;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(22, 22, 22);
+}
+.sec3 p{
+    color: grey;
+    font-size: 16px;
+    margin: 25px 0px;
+}
+.sec3 button{
+    padding: 15px 20px;
+    background-color: green;
+    color: white;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.24);
+    border: 1px solid green;
+    border-radius: 25px;
+    font-size: 15px;
+    transform: scale(0.8);
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.sec3 input{
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    padding: 15px 15px;
+    outline: green;
+    border: 1px solid lightgrey;
+}
+.sec3 input:focus{
+    color: green;
+    border: 1px solid  green ;
+    outline: 1px solid green;
+}
+
+.sec3 .total p{
+    margin: 15px 0px;
+}
+.sec3 .total p:nth-child(1){
+    margin-top: 25px;
+}
+
+
+.sec2  .cart-btn{
+    display: flex;
+    justify-content: center;
+    height: 80px;    
+    width: 60%;
+    /* border: 1px solid brown; */
+    align-items: center;
+    background-color: green;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-left: 20%;
+    font-weight: bold;
+    color: white;
+}
+.sec2 .cart-btn p{
+    height: 103%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.sec2 .cart-btn #text{
+    color: white;
+    font-size: 23px;
+    width: 100px;
+}
+
+.sec2 .cart-btn button{
+    height: 100%;
+    width: 35%;
+    background-color:  transparent;
+    border: none;
+    font-size: xx-large;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.7;
+}

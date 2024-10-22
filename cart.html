@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+    <!-- Navabr -->
+    <nav class="navbar">
+        <div class="navel1"><a href="index.html">
+                <h1> Ansari<span>Mart</span></h1>
+            </a></div>
+        <div class="navel2">
+            <ul id="list-section">
+                <li><a href="index.html" class="contentbtns ">HOME </a></li>
+                <li><a href="wishlist.html" class="contentbtns">WISHLIST </a></li>
+                <li><a href="cart.html" class="contentbtns active">CART </a></li>
+                <li><a href="checkout.html" class="contentbtns">CHECKOUT </a></li>
+                <li><a href="Blog.html" class="contentbtns">BLOG </a></li>
+                <li><a href="about.html" class="contentbtns">ABOUT </a></li>
+                <li><a href="contact.html" class="contentbtns">CONTACT </a></li>
+
+            </ul>
+        </div>
+        <div class="navel3">
+           <div class="circle"> <a href="cart.html" style="color: green;"><ion-icon name="cart-outline"></ion-icon></a></div><p id="item-count">0</p>
+
+           <div class="circle"> <a href="wishlist.html" style="color: green;"><ion-icon name="heart-outline"></ion-icon></a></div><p id="wish-count">0</p>
+
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+
+
+
+
+
+
+
+
+
+
+    <!-- sec1 start -->
+    <section class="sec1">
+        <h1>MY CART</h1>
+        <a href="Blog.html"><button class="details-blog"> View Details</button></a>
+    </section>
+    <!-- sec1 start -->
+
+
+
+    <!-- sec2 start -->
+    <section class="sec2">
+        <table border="0px" class="cart-table" cellpadding="0px" cellspacing="0px">
+            
+            <tr class="table-head" >
+                <td class="td-btn "> </td>
+                <td class="td-img"> Image </td>
+                <td> Product Name </td>
+                <td> Price </td>
+                <td> Quantity </td>
+                <td> Total </td>
+            </tr>
+
+            <tr id="tr1" class="tb_row" >
+                <td class="td-btn"> <span><button id="btn1" >+</button></span> </td>
+                <td> <img src="./images/cart/apples-winter.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="2" placeholder="1"> -->
+
+                    <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    
+                    
+                </td>
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr id="tr2" class="tb_row">
+                <td class="td-btn"> <span><button id="btn2">+</button></span> </td>
+                <td> <img src="./images/cart/strawberry-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                    
+                    <!-- <input class="input_count" type="number" value="1" placeholder="1"> -->
+                
+
+                    <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                
+                </td>
+               
+
+                
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr id="tr3" class="tb_row">
+                <td class="td-btn"> <span><button id="btn3">+</button></span> </td>
+                <td> <img src="./images/cart/mango-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count"> 
+                    <!-- <input class="input_count" type="number" value="2" placeholder="1">  -->
+                
+                    <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                </td>
+               
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr id="tr4" class="tb_row">
+                <td class="td-btn"> <span><button id="btn4">+</button></span> </td>
+                <td> <img src="./images/cart/mango-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="1" placeholder="1">  -->
+                    
+                     <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    </td>
+               
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr id="tr5" class="tb_row">
+                <td class="td-btn"> <span><button id="btn5">+</button></span> </td>
+                <td> <img src="./images/cart/peach-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="1" placeholder="1"> -->
+                    
+                     <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text"   class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    </td>
+             
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr id="tr6" class="tb_row">
+                <td class="td-btn"> <span><button id="btn6">+</button></span> </td>
+                <td> <img src="./images/cart/pomegrant-winter.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">250</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="2" placeholder="1">  -->
+                    
+                     <div class="cart-btn">
+                        <button type="radio"  onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio"onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    </td>
+               
+                <td class="td-total">250</td>
+            </tr>
+        </table>
+    </section>
+    <!-- sec2 start -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- sec3 starts -->
+    <section class="sec3">
+        <div class="coupon">
+            <h3>Coupon Code</h3>
+            <p> Enter your coupon code if you have one</p>
+            <hr>
+            <br><br>
+            <form action="">
+                <label for="coupon">Coupon Code</label>
+                <input type="text" id="coupon">
+            </form>
+            <button>Apply Coupon</button>
+        </div>
+        <div class="taxes">
+            <h3>Estimate shipping and tax</h3>
+            <p> Enter your destination to get a shipping estimate</p>
+            <hr>
+            <br><br>
+            <form action="">
+                <label for="country">Country</label>
+                <input type="text"  id="country">
+
+                <label for="state">State/Province</label>
+                <input type="text" id="state">
+
+                <label for="postal-code">Postal code</label>
+                <input type="text" id="postal-code">
+            </form>
+            <button>Estimate</button>
+
+        </div>
+        <div class="total">
+            <h3>Cart Totals</h3>
+            <p>
+            Subtotal    1500/- Rs</p> <br>
+            <p>Delievery   0/- Rs</p> <br>
+            <p>Discount    300/- Rs</p> 
+            
+            <hr>
+            <br><br>
+            <p> Total    1200\- Rs</p>
+            <br>
+            <button>Proceed to Checkout</button>
+
+        </div>
+    </section>
+    <!-- sec3 starts -->
+
+
+</body>
+
+</html>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+
+
+//     var btnContainer = document.getElementById("list-section");
+
+// var btns = btnContainer.getElementsByClassName("contentbtns");
+
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+
+
+// var price_length1 = document.getElementsByClassName("td-rs");
+// var price = document.getElementsByClassName("td-rs").innerText;
+// let rs_array = [];
+
+
+// for (var i = 0; i < price_length1.length; i++) {
+
+//     rs_array[i] = price[i];
+
+//     console.log(rs_array)
+
+//   price[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+
+
+// }
+
+
+
+
+
+
+
+
+
+// let num1 = Number( document.getElementsByClassName('text') ) ;
+
+// let num1_array = [];
+
+// for (let i = 0; i < num1.length; i++) {
+//     num1_array[i] = num1[i].innerText;    
+// }
+// console.log(num1_array);
+
+let num = 1;
+        function sub() { 
+            if (num>0) {
+                num -= 1; 
+        document.getElementById("text").innerText = num;
+            }
+            else{
+                console.log("")
+            }
+        }
+        function add() {
+            num += 1; 
+        document.getElementById("text").innerText = num;
+        }
+        function rotate1() {
+        document.getElementById("rotate1").style.transform = "rotate(180deg)";
+       } 
+       function rotate11() {
+        document.getElementById("rotate1").style.transform = "rotate(0deg)";
+       } 
+       function rotate2() {
+        document.getElementById("rotate2").style.transform = "rotate(90deg)";
+       } 
+       function rotate22() {
+        document.getElementById("rotate2").style.transform = "rotate(0deg)";
+       } 
+
+
+
+
+
+       let tr11 = document.getElementById('tr1');
+       let btn1 = document.getElementById('btn1');
+       btn1.addEventListener('click', ()=>{
+        tr11.style.display = 'none' ;
+       } )
+
+       let tr12 = document.getElementById('tr2');
+       let btn2 = document.getElementById('btn2');
+       btn2.addEventListener('click', ()=>{
+        tr12.style.display = 'none' ;
+       } )
+
+       let tr13 = document.getElementById('tr3');
+       let btn3 = document.getElementById('btn3');
+       btn3.addEventListener('click', ()=>{
+        tr13.style.display = 'none' ;
+       } )
+
+       let tr14 = document.getElementById('tr4');
+       let btn4 = document.getElementById('btn4');
+       btn4.addEventListener('click', ()=>{
+        tr14.style.display = 'none' ;
+       } )
+
+       let tr15 = document.getElementById('tr5');
+       let btn5 = document.getElementById('btn5');
+       btn5.addEventListener('click', ()=>{
+        tr15.style.display = 'none' ;
+       } )
+
+       let tr16 = document.getElementById('tr6');
+       let btn6 = document.getElementById('btn6');
+       btn6.addEventListener('click', ()=>{
+        tr16.style.display = 'none' ;
+       } )
+
+    //    let a =5;
+    //    console.log(a++);
+    //    console.log(a);
+
+    console.log(1 < 2 < 3);
+    console.log(3 > 2 > 1);
+
+
+    //   let  tb_row_class = document.getElementsByClassName('tb_row');
+    //    let tb_row_array = [];
+
+    //    for(let i = 0; i < tb_row_class.length ; i++ ){
+    //         tb_row_array[i] = tb_row_class[i];
+
+    //    }
+
+    //    btn6.addEventListener('click', ()=>{
+    //     tb_row_array.shift();
+    //    } )
+
+
+    //    function output(){
+    //     console.log(tb_row_array);
+    //    }
+    //    setInterval(output, 2000)
+
+
+    //    function tr1(){
+    //     tr11.style.display = none ;
+    //    }
+
+
+
+
+
+
+// function checkout(){
+
+    
+// let price = document.getElementsByClassName('td-rs') ;
+// let input_count = document.getElementsByClassName('input_count');
+// let total_amount = document.getElementsByClassName('td-total') ;
+
+
+
+// // console.log(input_count[0]);
+
+// let rs_array = [];
+// let input_array = [];
+// let total_array = []
+
+
+
+// // for individual prices
+// for (let i = 0; i < price.length; i++) {
+//     rs_array[i] = price[i].innerText;    
+// }
+// console.log(rs_array);
+
+
+// // for input counts
+// for(let i = 0; i< input_count.length; i++){
+//     input_array[i] = input_count[i].innerText;
+// }
+// console.log(input_array);
+
+
+
+// // for total amounts
+// for(let i = 0; i< total_amount.length; i++){
+//     total_array[i] = input_array[i] * rs_array[i]  ; 
+// }
+// console.log(total_array);
+
+
+// // for new total amounts
+
+//     function amount(){
+//         for(let i = 0; i< total_amount.length; i++){
+//    total_amount[i].innerText = total_array[i];
+//         }
+//     }
+
+    
+// }
+
+
+// setInterval(checkout,2000)
+
+
+
+
+
+// console.log(new_total_array);
+
+
+
+
+
+// // if (price[0].innerText > 0) {
+//     console.log("aaloo le lo");
+// }
+// else{
+//     console.log("han ni le raha");
+// }
+// console.log(Number(price.innerText) );
+
+
+
+
+</script>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/wishlist.CSS">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Navabr -->
+    <nav class="navbar">
+        <div class="navel1"><a href="index.html">
+                <h1> Ansari<span>Mart</span></h1>
+            </a></div>
+        <div class="navel2">
+            <ul id="list-section">
+                <li><a href="index.html" class="contentbtns ">HOME </a></li>
+                <li><a href="wishlist.html" class="contentbtns active">WISHLIST </a></li>
+                <li><a href="cart.html" class="contentbtns">CART </a></li>
+                <li><a href="checkout.html" class="contentbtns">CHECKOUT </a></li>
+                <li><a href="Blog.html" class="contentbtns">BLOG </a></li>
+                <li><a href="about.html" class="contentbtns">ABOUT </a></li>
+                <li><a href="contact.html" class="contentbtns">CONTACT </a></li>
+
+            </ul>
+        </div>
+        <div class="navel3">
+           <div class="circle"> <a href="cart.html" style="color: green;"><ion-icon name="cart-outline"></ion-icon></a></div><p id="item-count">0</p>
+           <div class="circle"> <a href="wishlist.html" style="color: green;"><ion-icon name="heart-outline"></ion-icon></a></div><p id="wish-count">0</p>
+        </div>
+    </nav>
+    <!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- sec1 start -->
+     <section class="sec1">
+        <h1>WISHLIST</h1>
+        <a href="Blog.html"><button class="details-blog"> View Details</button></a>
+    </section>
+    <!-- sec1 start -->
+
+
+
+    <!-- sec2 start -->
+    <section class="sec2">
+        <table border="0px" class="cart-table" cellpadding="0px" cellspacing="0px">
+            
+            <tr class="table-head">
+                <td class="td-btn "> </td>
+                <td class="td-img"> Image </td>
+                <td> Product Name </td>
+                <td> Price </td>
+                <td> Quantity </td>
+                <td> Total </td>
+            </tr>
+
+            <tr>
+                <td class="td-btn"> <span><button>+</button></span> </td>
+                <td> <img src="./images/cart/apples-winter.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="2" placeholder="1"> -->
+
+                    <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    
+                    
+                </td>
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr>
+                <td class="td-btn"> <span><button>+</button></span> </td>
+                <td> <img src="./images/cart/strawberry-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                    
+                    <!-- <input class="input_count" type="number" value="1" placeholder="1"> -->
+                
+
+                    <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                
+                </td>
+               
+
+                
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr>
+                <td class="td-btn"> <span><button>+</button></span> </td>
+                <td> <img src="./images/cart/mango-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count"> 
+                    <!-- <input class="input_count" type="number" value="2" placeholder="1">  -->
+                
+                    <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                </td>
+               
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr>
+                <td class="td-btn"> <span><button>+</button></span> </td>
+                <td> <img src="./images/cart/mango-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="1" placeholder="1">  -->
+                    
+                     <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    </td>
+               
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr>
+                <td class="td-btn"> <span><button>+</button></span> </td>
+                <td> <img src="./images/cart/peach-summer.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">350</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="1" placeholder="1"> -->
+                    
+                     <div class="cart-btn">
+                        <button type="radio"  onmouseover=" rotate1()" onmouseout="rotate11()" onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text"   class="input_count"> 1 </p>
+                          <button type="radio" onmouseover=" rotate2()" onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    </td>
+             
+                <td class="td-total">350</td>
+            </tr>
+
+            <tr>
+                <td class="td-btn"> <span><button>+</button></span> </td>
+                <td> <img src="./images/cart/pomegrant-winter.jpg" alt="" height="100px"> </td>
+                <td class="td-text"> Summer <br>
+                    <p>Ye bohot faide mand hai</p>
+                </td>
+                <td class="td-rs">250</td>
+                <td class="td-count">
+                     <!-- <input class="input_count" type="number" value="2" placeholder="1">  -->
+                    
+                     <div class="cart-btn">
+                        <button type="radio"  onclick="sub() " id="rotate1">-</button>
+                         <p class="text" id="text" class="input_count"> 1 </p>
+                          <button type="radio"onmouseout="rotate22()" onclick="add()" id="rotate2">+</button>
+                    </div>
+                    </td>
+               
+                <td class="td-total">250</td>
+            </tr>
+        </table>
+    </section>
+    <!-- sec2 start -->
+
+
+    
+
+
+
+    <section class="sec4">
+
+        <div class="subs_txt">
+            <p>Subcribe to our Newsletter</p>
+            <p>Get e-mail updates about our latest shops and special offers</p>
+        </div>
+        <div class="subs_input">
+            <input id="subs_mail" type="email" placeholder="Enter Email Address" required>
+            <input id="subs_submit" type="submit" value="Subscribe">
+                
+        </div>
+
+    </section>
+
+   
+</body>
+</html>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+<script>
+
+    let subs_mail = document.getElementById('subs_mail');
+    function inputvalue(){
+    console.log(subs_mail.value);
+    }
+    setInterval(inputvalue, 2000)
+    let subs_submit =  document.getElementById('subs_submit');
+
+
+    subs_submit.addEventListener('click', ()=>{
+        if(subs_mail.value == null){
+            console.log("aalo le lo");
+            alert('Please Enter the Email')
+        }
+        else{
+            alert('Subscribed Successful')
+        }
+    })
+
+    
+let num = 1;
+        function sub() { 
+            if (num>0) {
+                num -= 1; 
+        document.getElementById("text").innerText = num;
+            }
+            else{
+                console.log("")
+            }
+        }
+        function add() {
+            num += 1; 
+        document.getElementById("text").innerText = num;
+        }
+        function rotate1() {
+        document.getElementById("rotate1").style.transform = "rotate(180deg)";
+       } 
+       function rotate11() {
+        document.getElementById("rotate1").style.transform = "rotate(0deg)";
+       } 
+       function rotate2() {
+        document.getElementById("rotate2").style.transform = "rotate(90deg)";
+       } 
+       function rotate22() {
+        document.getElementById("rotate2").style.transform = "rotate(0deg)";
+       } 
+</script>

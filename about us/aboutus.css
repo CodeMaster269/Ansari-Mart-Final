@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.aboutus{
+    height: 100%;
+    width: 100%;
+}
+.upper{
+    height: 400px;
+    width: 100%;
+    background-image: url(./left.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    font-size: 40px;
+    color: rgb(14, 90, 5);
+    font-style: normal;
+    transition: .5s;
+    cursor: pointer;
+}
+.about:hover{
+    color: black;
+    transform: scale(1.1);
+
+}
+.left{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.lftimg{
+    height: 100%;
+    width: 30%;
+    background-image: url(./botomleft.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+.contlft{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 10px;
+}
+.para1{
+    font-size: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+.para1:hover{
+    transform: scale(1);
+    color: green;
+}
+.lefth1{
+    font-size: 40px;
+    transition: .5s;
+    cursor: pointer;
+}
+.lefth1:hover{
+    transform: scale(1.05);
+    color: green;
+}
+.btn1{
+    height: 40px;
+    width: 100px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn1:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: green;
+}
+.search{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchbtn{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.btn2{
+    padding: 10px 15px ;
+    background-color: transparent;
+    color: black;
+    border: 1px solid green;
+    border-radius: 15px;
+    transition: 1s;
+}
+.btn2:hover{
+    background-color: green;
+}
+input{
+    width: 40%;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    color: rgb(23, 88, 23);
+    outline: none;
+}
+.bottomimg{
+    height: 400px;
+    width: 100%;
+    background-image: url(./fruit-salad.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(170, 255, 0);
+    font-size: 40px;
+    transition: .5s;
+    cursor: pointer;
+}
+.num:hover{
+    transform: scale(1.1);
+}
+.para2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(82, 255, 2);
+    transition: .5s;
+    cursor: pointer;
+}
+.para2:hover{
+    transform: scale(1.1);
+    color: orange;
+}
+.stisfied{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stisfied p{
+    font-size: 20px;
+}
+.satisfied{
+    font-size: 40px;
+}
+.lower{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.child1{
+      height: 100%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.image{
+    height: 30%;
+    width: 25%;
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./Ghulman.jpg);
+ 
+}
+.cnt{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.para4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+.child2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image2{
+    height: 30%;
+    width: 25%;
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./Qasim.jpg);
+ 
+}
+.child3{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image3{
+    height: 30%;
+    width: 25%;
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./Fahad.jpg);
+ 
+}

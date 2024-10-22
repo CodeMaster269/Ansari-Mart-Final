@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+        .sec5{
+            height: 105vh;
+            width: 100%;
+            /* border: 1px solid brown; */
+            padding: 15px 13%;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 25px;
+            
+        }
+        .sec5 .left{
+            height: 90%;
+            width: 60%;
+            /* border: 1px solid brown; */
+            padding: 5px 5px;
+        }
+
+        .sec5 .left h1{
+            font-size: 24px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+
+        .sec5 .left .firstline{
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            margin-top: 20px;
+
+
+            height: 70px;
+            width: 100%;
+            /* border: 1px solid brown; */
+        }
+        .sec5 .left .firstline label{
+            position: absolute;
+            transform: translate(0px, -10px);
+            font-size: 14px;
+            margin-left: 20px;
+
+        }
+        .sec5 .left .firstline select{
+            
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            width: 95%;
+            height: auto;
+            padding: 15px 15px;
+            border: 1px solid lightgrey;
+            margin-left: 20px;
+            color: lightgrey;
+
+        }
+        .sec5 .left .firstline input{
+            
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            width: 45%;
+            height: auto;
+            padding: 15px 15px;
+            border: 1px solid lightgrey;
+            margin-left: 20px;
+            
+
+        }
+        .sec5 .left input::placeholder{
+            color: lightgrey;
+        }
+        .sec5 .left input:focus{
+            outline: 1px solid green;
+            border: 1px solid green;
+        }
+        .sec5 .left .firstline2{
+            /* border: 1px solid brown; */
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+        }
+        
+        .sec5 .left .firstline2 label{
+            margin-right: 30px;
+        }
+        
+
+
+
+
+
+
+        .sec5 .right{
+            height: 90%;
+            width: 40%;
+            /* border: 1px solid brown; */
+            margin-top: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .sec5 .right .upper{
+            height: 40%;
+            width: 98%;
+            border: 1px solid lightgrey;
+            padding-left: 20px;
+        }
+
+        .sec5 .right .upper .total h3{
+            font-size: 24px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        
+        .sec5 .right .upper .total hr{
+           width: 90%;
+           margin-top: 10px;
+        }
+
+        .sec5 .right .upper .total p{
+           margin: 5px 0px;
+           font-size: 14px;
+           color: grey  ;
+        }
+        .sec5 .right .upper .total p span{
+           margin-left: 50px;
+        }
+        
+        .sec5 .right .upper .total p:nth-child(1){
+            margin-top: 25px;
+        }
+        .sec5 .right .lower{
+            height: 55%;
+            width: 98%;
+            border: 1px solid lightgrey;
+        }
+        .sec5 .right .lower {
+            padding-left: 20px;
+        }
+        .sec5 .right .lower h1{
+            margin-top: 20px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sec5 .right .lower label, .sec5 .right .lower input{
+            margin-bottom: 20px;
+            font-size: 15px;
+            color: grey;
+        }
+        .sec5 .right .lower input {
+            margin-right: 10px;
+        }
+        .sec5 .right .lower .placeorder{
+            padding: 10px 20px;
+            width: 90%;
+            border-radius: 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 2px 5px 10px rgba(0, 128, 0, 0.37);
+        }
+    </style>
+
+
+</head>
+<body>
+    
+
+
+    <section class="sec5">
+
+        <!-- left senction starts -->
+        <div class="left">
+
+            <h1>Billing Details</h1>
+
+            <div class="firstline">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname">
+
+
+                <label for="fname">Last Name</label>
+                <input type="text" id="fname">
+
+            </div>
+
+            <div class="firstline">
+                <label for="country">State\Country</label>
+
+                <select name="State" id="country">
+                    <option value="france">France</option>
+                    <option value="Italy">Italy</option>
+                    <option value="hongkong">HongKong</option>
+                    <option value="southafrica">SouthAfrica</option>
+                    <option value="japan">Japan</option>
+                </select>
+
+            </div>
+
+
+            <div class="firstline">
+
+                <label for="fname">Street Address</label>
+                <input type="text" id="fname" placeholder="House # , Street #">
+
+
+                <input type="text" id="fname" placeholder="Appartment , suit (Optional)">
+
+            </div>
+
+
+
+            <div class="firstline">
+
+                <label for="fname">Town / City</label>
+                <input type="text" id="fname">
+
+
+                <label for="fname">Postal / Zip</label>
+                <input type="text" id="fname">
+
+            </div>
+
+
+            <div class="firstline">
+
+                <label for="fname">Phone</label>
+                <input type="text" id="fname">
+
+
+                <label for="fname">Email Address</label>
+                <input type="text" id="fname">
+
+            </div>
+
+
+            <div class="firstline2">
+                <input type="radio" name="address" id="radio1">
+                <label for="radio1">Create Account? </label>
+                
+
+
+                <input type="radio" name="address" id="radio2">
+                <label for="radio2">Ship To different Address</label>
+
+
+                
+
+            </div>
+
+
+        </div>
+
+        <!-- left senction ends -->
+
+
+        <div class="right">
+
+            <div class="upper">
+
+                <div class="total">
+                    <h3>Cart Totals</h3>
+                    <p>
+                    Subtotal    <span>1500/- Rs</span></p> <br>
+                    <p>Delievery  <span> 0/- Rs</span></p> <br>
+                    <p>Discount   <span> 300/- Rs</span></p> 
+                    
+                    <hr>
+                    <br>
+                    <p> Total    <span style="color: black;"> 1200\- Rs</span></p>
+                    <br>
+        
+                </div>
+
+            </div>
+
+            <div class="lower">
+
+                 <h1>Payment Method</h1>
+                 <input type="radio" id="payment1" name="Payment">
+                 <label for="payment1">Direct Bank Transfer</label>
+                 <br>
+                 <input type="radio" id="payment2" name="Payment">
+                 <label for="payment2">Checkout Payment</label>
+                 <br>
+
+                 <input type="radio" id="payment3" name="Payment">
+                 <label for="payment3">Paypal</label>
+                <br>
+
+
+                 <input type="checkbox" id="payment4" name="Payment">
+                 <label for="payment4"><span>I have Read And Accept The Conditions</span></label>
+
+                <input type="submit" value="Place Order" class="placeorder">
+            </div>
+
+        </div>
+
+
+    </section>
+
+</body>
+</html>
